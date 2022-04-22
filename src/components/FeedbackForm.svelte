@@ -1,17 +1,17 @@
 <script>
-  import { v4 as uuidv4 } from "uuid"
-  import { FeedbackStore } from "../stores"
-  import Card from "./Card.svelte"
-  import Button from "./Button.svelte"
-  import RatingSelect from "./RatingSelect.svelte"
+  import { v4 as uuidv4 } from 'uuid'
+  import { FeedbackStore } from '../stores'
+  import Card from './Card.svelte'
+  import Button from './Button.svelte'
+  import RatingSelect from './RatingSelect.svelte'
 
-  let text = ""
+  let text = ''
   let rating = 10
   let btnDisabled = true
   let min = 10
   let message
 
-  const handleSelect = (e) => (rating = e.detail)
+  const handleSelect = e => (rating = e.detail)
 
   const handleInput = () => {
     if (text.trim().length <= min) {
@@ -28,14 +28,14 @@
       const newFeedback = {
         id: uuidv4(),
         text,
-        rating: +rating,
+        rating: +rating
       }
 
-      FeedbackStore.update((currentFeedback) => {
+      FeedbackStore.update(currentFeedback => {
         return [newFeedback, ...currentFeedback]
       })
 
-      text = ""
+      text = ''
     }
   }
 </script>
@@ -51,8 +51,7 @@
         type="text"
         on:input={handleInput}
         bind:value={text}
-        placeholder="Tell us something that keeps you coming back"
-      />
+        placeholder="Tell us something that keeps you coming back" />
       <Button disabled={btnDisabled} type="submit">Send</Button>
     </div>
 

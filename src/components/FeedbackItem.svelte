@@ -1,12 +1,12 @@
 <script>
-  import { FeedbackStore } from "../stores"
-  import { MdDelete } from "svelte-icons/md"
-  import Card from "./Card.svelte"
+  import { FeedbackStore } from '../stores'
+  import { MdDelete } from 'svelte-icons/md'
+  import Card from './Card.svelte'
   export let item
 
-  const handleDelete = (itemId) => {
-    FeedbackStore.update((currentFeedback) => {
-      return currentFeedback.filter((item) => item.id !== itemId)
+  const handleDelete = itemId => {
+    FeedbackStore.update(currentFeedback => {
+      return currentFeedback.filter(item => item.id !== itemId)
     })
   }
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import { FeedbackStore } from "../stores"
+  import { FeedbackStore } from '../stores'
 
   $: count = $FeedbackStore.length
   $: average =
