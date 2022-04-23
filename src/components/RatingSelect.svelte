@@ -19,7 +19,8 @@
       name="rating"
       value="1"
       on:change={onChange}
-      checked={selected === 1} />
+      checked={selected === 1}
+    />
     <label for="num1">1</label>
   </li>
 
@@ -30,7 +31,8 @@
       name="rating"
       value="2"
       on:change={onChange}
-      checked={selected === 2} />
+      checked={selected === 2}
+    />
     <label for="num2">2</label>
   </li>
 
@@ -41,7 +43,8 @@
       name="rating"
       value="3"
       on:change={onChange}
-      checked={selected === 3} />
+      checked={selected === 3}
+    />
     <label for="num3">3</label>
   </li>
 
@@ -52,7 +55,8 @@
       name="rating"
       value="4"
       on:change={onChange}
-      checked={selected === 4} />
+      checked={selected === 4}
+    />
     <label for="num4">4</label>
   </li>
 
@@ -63,7 +67,8 @@
       name="rating"
       value="5"
       on:change={onChange}
-      checked={selected === 5} />
+      checked={selected === 5}
+    />
     <label for="num5">5</label>
   </li>
 
@@ -74,7 +79,8 @@
       name="rating"
       value="6"
       on:change={onChange}
-      checked={selected === 6} />
+      checked={selected === 6}
+    />
     <label for="num6">6</label>
   </li>
 
@@ -85,7 +91,8 @@
       name="rating"
       value="7"
       on:change={onChange}
-      checked={selected === 7} />
+      checked={selected === 7}
+    />
     <label for="num7">7</label>
   </li>
 
@@ -96,7 +103,8 @@
       name="rating"
       value="8"
       on:change={onChange}
-      checked={selected === 8} />
+      checked={selected === 8}
+    />
     <label for="num8">8</label>
   </li>
 
@@ -107,7 +115,8 @@
       name="rating"
       value="9"
       on:change={onChange}
-      checked={selected === 9} />
+      checked={selected === 9}
+    />
     <label for="num9">9</label>
   </li>
 
@@ -118,7 +127,8 @@
       name="rating"
       value="10"
       on:change={onChange}
-      checked={selected === 10} />
+      checked={selected === 10}
+    />
     <label for="num10">10</label>
   </li>
 </ul>

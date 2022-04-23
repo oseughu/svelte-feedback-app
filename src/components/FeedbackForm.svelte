@@ -51,7 +51,8 @@
         type="text"
         on:input={handleInput}
         bind:value={text}
-        placeholder="Tell us something that keeps you coming back" />
+        placeholder="Tell us something that keeps you coming back"
+      />
       <Button disabled={btnDisabled} type="submit">Send</Button>
     </div>
 
