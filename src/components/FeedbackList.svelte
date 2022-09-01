@@ -1,6 +1,6 @@
 <script>
-  import { FeedbackStore } from '../stores'
   import { fade, scale } from 'svelte/transition'
+  import { FeedbackStore } from '../stores'
   import FeedbackItem from './FeedbackItem.svelte'
 </script>
 

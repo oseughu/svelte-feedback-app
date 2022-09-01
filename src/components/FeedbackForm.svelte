@@ -11,7 +11,7 @@
   let min = 10
   let message
 
-  const handleSelect = e => (rating = e.detail)
+  const handleSelect = (e) => (rating = e.detail)
 
   const handleInput = () => {
     if (text.trim().length <= min) {
@@ -31,7 +31,7 @@
         rating: +rating
       }
 
-      FeedbackStore.update(currentFeedback => {
+      FeedbackStore.update((currentFeedback) => {
         return [newFeedback, ...currentFeedback]
       })
 
